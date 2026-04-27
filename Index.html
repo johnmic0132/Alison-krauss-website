@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alison Krauss - Official Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#f8f9fc;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#0f172a;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:#ddd;
+    margin:0 10px;
+    text-decoration:none;
+    font-size:14px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#fff;
+}
+
+/* Hero */
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    opacity:0.9;
+}
+
+/* Container */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h3{
+    text-align:center;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+/* Bio */
+.bio{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    line-height:1.7;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Cards */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+button{
+    background:#2563eb;
+    border:none;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#1e40af;
+}
+
+/* Newsletter */
+.newsletter{
+    background:#0f172a;
+    color:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.newsletter input{
+    padding:10px;
+    width:250px;
+    border:none;
+    border-radius:6px;
+    margin-right:10px;
+}
+
+.newsletter button{
+    background:#22c55e;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+    color:#aaa;
+    margin-top:40px;
+}
+
+footer a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Alison Krauss</h1>
+    <nav>
+        <a href="#bio">Biography</a>
+        <a href="#events">Events</a>
+        <a href="#booking">Booking</a>
+        <a href="#membership">Membership</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>Alison Krauss</h2>
+        <p>Grammy Award-Winning Singer | Fiddler | Producer</p>
+    </div>
+</div>
+
+<div class="container">
+
+<section id="bio">
+<h3>Biography</h3>
+<div class="bio">
+<p>
+Alison Krauss is an internationally acclaimed American bluegrass-country singer, violinist, and producer. With an extraordinary career spanning decades, she has earned numerous Grammy Awards, making her one of the most awarded female artists in history. Known for her angelic voice and timeless music, Alison continues to inspire audiences around the world with her artistry and passion.
+</p>
+</div>
+</section>
+
+<section id="events">
+<h3>Events</h3>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
+<h4>Live Concert - Nashville</h4>
+<p>Date: July 2026</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+<h4>Music Festival</h4>
+<p>Date: August 2026</p>
+</div>
+
+</section>
+
+<section id="booking">
+<h3>Booking</h3>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd53">
+<h4>Private Event</h4>
+<p>Invite Alison Krauss to perform at your exclusive event.</p>
+<button onclick="window.location.href='mailto:booking@alisonkrauss.com'">Book Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc">
+<h4>Meet & Greet</h4>
+<p>Enjoy a once-in-a-lifetime meet and greet experience.</p>
+<button onclick="window.location.href='mailto:booking@alisonkrauss.com'">Book Now</button>
+</div>
+</div>
+</section>
+
+<section id="membership">
+<h3>Membership</h3>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1610651863894-040a14e2ef15">
+<h4>Fan Club Access</h4>
+<p>Get exclusive content, early tickets, and special updates.</p>
+<button onclick="window.location.href='mailto:membership@alisonkrauss.com'">Join Now</button>
+</div>
+</div>
+</section>
+
+<section class="newsletter">
+<h3>Subscribe</h3>
+<p>Get updates about new music and events</p>
+<input type="email" placeholder="Enter email">
+<button>Subscribe</button>
+</section>
+
+<section id="contact">
+<h3>Contact</h3>
+<p style="text-align:center;">
+<a href="https://t.me/alisonkrauss_official">Message on Telegram</a>
+</p>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Alison Krauss</p>
+<p>
+<a href="#">Instagram</a> |
+<a href="#">Twitter</a> |
+<a href="#">Facebook</a>
+</p>
+</footer>
+
+</body>
+</html>
